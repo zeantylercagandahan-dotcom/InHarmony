@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <link rel="stylesheet" href="style.css">
+        <script defer src="script.js"></script>
+
+        <title>InHarmony</title>
+         <style>
+         h1{
+            background-color: hsl(180, 100%, 25%);
+        }   
+        h1{
+            font-size: 60px;
+        }
+        </style>
+        <header class="hero">
+            <h1>InHarmony</h1>
+            <img src="Images/InHarmony logo.png" class="logo">
+        </header>
+        
+</head>
+    <body>
+        <div> 
+        <nav class="navbar">
+            <a class="nav-item" href="index.html">Home</a>
+            <a class="nav-item active" href="sessions.html">Sessions</a>
+            <a class="nav-item" href="preferences.html">Preferences</a>
+            <a class="nav-item" href="myprofile.html">My Profile</a>
+            <a class="nav-item" href="schedules.html">Schedules</a>
+        </nav>
+        </div>
+        <div class="page-bg2"style="height: 500px; background: rgb(145, 187, 255);">
+             <p class="center">
+                <span  class="inline-border" style="background: white;">Available Therapy Sessions</span>
+                <div class="content-s1">
+                    <div class="option">
+                        <div class="box2"><img class="ats" src="Images/Anonymous.png"></div>
+                        <h3 class="box-head">Anonymous Texting</h3>
+                    </div>
+                    <div class="option">
+                        <div class="box2"><img class="ats" src="Images/Videocall.png"></div>
+                        <h3 class="box-head">Videocall</h3>
+                    </div>
+                    <div class="option">
+                        <div class="box2"><img class="ats" src="Images/Face-to-Face.png"></div>
+                        <h3 class="box-head">Face-to-Face</h3>
+                    </div>
+                    <div class="option">
+                        <div class="box2"><img class="ats" src="Images/Voice-chat.png"></div>
+                        <h3 class="box-head">Voice Chats</h3>
+                    </div>
+            </div>
+            </p>
+        </div>
+
+        <div class="page-bg2"style="height: 500px; background: rgb(58, 58, 255);">
+             <p class="center">
+                <span  class="inline-border" style="background: white;">Therapist Options</span>
+                <div class="content-s2">
+                    <div class="option">
+                        <div class="box3"><img class="T-user" src="Images/T1.png"></div>
+                    </div>
+                    <div class="option">
+                        <div class="box3"><img class="T-user" src="Images/T2.png"></div>
+                    </div>
+                    <div class="option">
+                        <div class="box3"><img class="T-user" src="Images/T3.png"></div>
+                    </div>
+                    <div class="option">
+                        <div class="box3"><img class="T-user" src="Images/T4.png"></div>
+                    </div>
+            </div>
+            </p>
+        </div>
+
+        <div class="page-bg2"style="height: 100px; background: rgb(145, 187, 255);">
+            <p class="center">
+                <span  class="inline-border" style="background: white;">Details and More</span>
+            </p>        
+        </div>
+        
+        <div class="container">
+            <section class="layout">
+                <div class="col-upr-left">
+                   Next Sessions: YYYY/MM/DD
+                </div>
+
+        <div class="col-mid">
+            <h3 class="info-ss">How this Supports you:</h3>
+                It's important that we are able to provide proper sessions, that would serve your needs as well as making you comfortable and satisfied with the therapy you recieve.
+                With these details you would select, we can ensure that your safety and how you want to interact with your personal therapist, which is why you have a smooth experience in doing so.
+        </div>
+        <div class="col-right">
+            <div class="col-right section-box">
+            <h3>Quick Preference Form</h3>
+            <button id="expandBtn2">Expand</button>
+        </div>
+
+
+<div id="modal2" class="modal2">
+    <div class="modal2-content">
+        <span class="close-btn2">&times;</span>
+        
+        <h3>What are you looking for in a therapist?</h3>
+        <form id="preferences-form2">
+            <label for="preferences2">Please describe what you are looking for in a therapist:</label>
+            <textarea id="preferences2" name="preferences2" rows="3" placeholder="E.g., someone patient, understands teen issues, uses interactive techniques..." required></textarea>
+
+            <label for="experience2">What kind of experience or expertise do you want your therapist to have?</label>
+            <textarea id="experience2" name="experience2" rows="3" placeholder="E.g., experience with anxiety, depression, school stress..." required></textarea>
+
+            <label for="communication2">How would you like your therapist to communicate with you?</label>
+            <textarea id="communication2" name="communication2" rows="3" placeholder="E.g., friendly but professional, uses text/email check-ins, explains things clearly..." required></textarea>
+
+            <label for="approach2">What type of therapy approach do you prefer?</label>
+            <textarea id="approach2" name="approach2" rows="3" placeholder="E.g., talk therapy, cognitive behavioral therapy, creative exercises..." required></textarea>
+
+            <label for="additional2">Any other qualities or preferences?</label>
+            <textarea id="additional2" name="additional2" rows="3" placeholder="E.g., availability, cultural understanding, check-ins..." required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</div>
+
+                </div>
+
+                <div class="col-lwr-left">
+                    <div class="msg-section">
+                    <a href="messages.html">
+                        <button><img src="Images/messages-btn.png" style="height: 75px; width: auto;"></button>
+                    </a>
+                    </div>
+            </section>
+        </div>
+        
+        <div style="height: 100px; background: rgb(255, 255, 255);"></div>
+            <div class="header-container">
+                <div class="contact-number">
+                    <img src="Images/contact-removebg-preview.png" class="contact" height="50" width="auto">
+                    <b class="number">+971 55 482 7413 inharmony@gmail.com</b>
+                </div>
+
+                <div class="button-wrapper">
+                    <button id="policyBtn">Policies</button>
+                    <button id="termsBtn">Terms & Conditions</button>
+                </div>
+            </div>
+
+        <div id="policyModal" class="modal">
+            <div class="modal-content">
+                <h2>Policies</h2>
+                <p>We take your privacy seriously. Any information you provide on this website will be handled responsibly. Here’s how we manage your data:</p>
+
+<ol>
+    <li><strong>Information Collection:</strong> We may collect personal details such as your name, email, or feedback when you use contact forms, sign up for newsletters, or access certain resources.</li>
+    <li><strong>Use of Information:</strong> The data is used to improve the website, respond to inquiries, and provide resources or guidance related to mental health and therapy.</li>
+    <li><strong>Data Protection:</strong> Your information is stored securely and only accessible by authorized personnel. We implement appropriate technical and organizational measures to prevent misuse or unauthorized access.</li>
+    <li><strong>Third-Party Services:</strong> We do not sell or share your personal data. Some features may use trusted third-party services (like hosting or analytics) that adhere to strict privacy standards.</li>
+    <li><strong>Cookies and Tracking:</strong> We may use cookies to enhance your experience, track website performance, and understand how users interact with our resources.</li>
+    <li><strong>Parental Consent:</strong> If you are under 18, you must have permission from a parent or guardian before providing personal information.</li>
+    <li><strong>Your Rights:</strong> You can request access, correction, or deletion of your personal data at any time by contacting us.</li>
+</ol>
+
+
+                <div class="checkbox-wrapper">
+                    <input type="checkbox" id="acceptPolicy">
+                    <label for="acceptPolicy">Accept</label>
+                </div>
+
+                <button id="closePolicyBtn">Close</button>
+             </div>
+        </div>
+
+        <div id="termsModal" class="modal">
+            <div class="modal-content">
+                <h2>Terms & Conditions</h2>
+               <p>By using this website, you agree to the following terms:</p>
+
+<ol>
+    <li><strong>Purpose of the Website:</strong> This site provides mental health information and therapy resources for teens. It is for educational purposes only and does not replace professional advice.</li>
+    <li><strong>Professional Advice Disclaimer:</strong> The content is not a substitute for diagnosis or treatment. Always consult a licensed mental health professional for personal guidance.</li>
+    <li><strong>Responsible Use:</strong> Users must not misuse the website, post harmful content, or attempt to disrupt its functionality.</li>
+    <li><strong>Intellectual Property:</strong> All content, graphics, and materials on this website are owned by the site creators. You may not reproduce or distribute them without permission.</li>
+    <li><strong>Limitation of Liability:</strong> The website and its owners are not liable for any harm, loss, or damages arising from use of the site or reliance on its content.</li>
+    <li><strong>Modifications:</strong> We reserve the right to update the website, privacy policy, or terms and conditions at any time. Continued use indicates acceptance of these changes.</li>
+    <li><strong>Governing Law:</strong> These terms are governed by the laws of the country where the website is operated.</li>
+</ol>
+
+                <div class="checkbox-wrapper">
+                    <input type="checkbox" id="acceptTerms">
+                    <label for="acceptTerms">Accept</label>
+                </div>
+
+            <button id="closeTermsBtn">Close</button>
+            </div>
+        </div>
+
+
+    </body>
+</html>

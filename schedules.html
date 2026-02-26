@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="style.css">
+        <script defer src="script.js"></script>
+        
+         <title>InHarmony</title>
+         <style>
+         h1{
+            background-color: hsl(180, 100%, 25%);
+        }   
+        h1{
+            font-size: 60px;
+        }
+        </style> 
+        <header class="hero">
+            <h1>InHarmony</h1>
+            <img src="Images/InHarmony logo.png" class="logo">
+        </header>
+        
+</head>
+    <body>    
+        <nav class="navbar">
+            <a class="nav-item" href="index.html">Home</a>
+            <a class="nav-item" href="sessions.html">Sessions</a>
+            <a class="nav-item" href="preferences.html">Preferences</a>
+            <a class="nav-item" href="myprofile.html">My Profile</a>
+            <a class="nav-item active" href="schedules.html">Schedules</a>
+        </nav>
+
+        <div class="calendar-bg" style="background: rgb(145, 187, 255); height: 600px; padding: 30px;">
+            <div class="calendar-app">
+                <div class="calendar-container">
+                    <div class="calendar-header">
+                        <button id="prev">&#10094;</button>
+                        <h2 id="month-year"></h2>
+                        <button id="next">&#10095;</button>
+                    </div>
+                    <div class="weekdays">
+                        <div>Sun</div>
+                        <div>Mon</div>
+                        <div>Tue</div>
+                        <div>Wed</div>
+                        <div>Thu</div>
+                        <div>Fri</div>
+                        <div>Sat</div>
+                    </div>
+                <div class="days" id="days"></div>
+                </div>
+            <div class="session-controls">
+                <input type="text" id="event-date" placeholder="DD/MM/YYYY" readonly>
+                <input type="text" id="event-title" placeholder="Event Title">
+                <button id="add-event">ADD</button>
+                <button id="delete-event">DELETE</button>
+            </div>
+            <div class="info-section">
+                <div class="drafts">
+                    <h3>DRAFTS</h3>
+                    <ul id="draft-list"></ul>
+                </div>
+                <div class="therapy-info">
+                    <h3>Therapy info:</h3>
+                    <p id="therapy-details">Select a day to see session info here.</p>
+                </div>
+            </div>
+        </div>
+        </div>
+
+        <div style="height: 50px; background: rgb(255, 255, 255);"></div>
+        <div class="header-container">
+                <div class="contact-number">
+                    <img src="Images/contact-removebg-preview.png" class="contact" height="50" width="auto">
+                    <b class="number">+971 55 482 7413 inharmony@gmail.com</b>
+                </div>
+
+                <div class="button-wrapper">
+                    <button id="policyBtn">Policies</button>
+                    <button id="termsBtn">Terms & Conditions</button>
+                </div>
+            </div>
+
+        <div id="policyModal" class="modal">
+            <div class="modal-content">
+                <h2>Policies</h2>
+                <p>We take your privacy seriously. Any information you provide on this website will be handled responsibly. Here’s how we manage your data:</p>
+
+<ol>
+    <li><strong>Information Collection:</strong> We may collect personal details such as your name, email, or feedback when you use contact forms, sign up for newsletters, or access certain resources.</li>
+    <li><strong>Use of Information:</strong> The data is used to improve the website, respond to inquiries, and provide resources or guidance related to mental health and therapy.</li>
+    <li><strong>Data Protection:</strong> Your information is stored securely and only accessible by authorized personnel. We implement appropriate technical and organizational measures to prevent misuse or unauthorized access.</li>
+    <li><strong>Third-Party Services:</strong> We do not sell or share your personal data. Some features may use trusted third-party services (like hosting or analytics) that adhere to strict privacy standards.</li>
+    <li><strong>Cookies and Tracking:</strong> We may use cookies to enhance your experience, track website performance, and understand how users interact with our resources.</li>
+    <li><strong>Parental Consent:</strong> If you are under 18, you must have permission from a parent or guardian before providing personal information.</li>
+    <li><strong>Your Rights:</strong> You can request access, correction, or deletion of your personal data at any time by contacting us.</li>
+</ol>
+
+
+                <div class="checkbox-wrapper">
+                    <input type="checkbox" id="acceptPolicy">
+                    <label for="acceptPolicy">Accept</label>
+                </div>
+
+                <button id="closePolicyBtn">Close</button>
+             </div>
+        </div>
+
+        <div id="termsModal" class="modal">
+            <div class="modal-content">
+                <h2>Terms & Conditions</h2>
+               <p>By using this website, you agree to the following terms:</p>
+
+<ol>
+    <li><strong>Purpose of the Website:</strong> This site provides mental health information and therapy resources for teens. It is for educational purposes only and does not replace professional advice.</li>
+    <li><strong>Professional Advice Disclaimer:</strong> The content is not a substitute for diagnosis or treatment. Always consult a licensed mental health professional for personal guidance.</li>
+    <li><strong>Responsible Use:</strong> Users must not misuse the website, post harmful content, or attempt to disrupt its functionality.</li>
+    <li><strong>Intellectual Property:</strong> All content, graphics, and materials on this website are owned by the site creators. You may not reproduce or distribute them without permission.</li>
+    <li><strong>Limitation of Liability:</strong> The website and its owners are not liable for any harm, loss, or damages arising from use of the site or reliance on its content.</li>
+    <li><strong>Modifications:</strong> We reserve the right to update the website, privacy policy, or terms and conditions at any time. Continued use indicates acceptance of these changes.</li>
+    <li><strong>Governing Law:</strong> These terms are governed by the laws of the country where the website is operated.</li>
+</ol>
+
+                <div class="checkbox-wrapper">
+                    <input type="checkbox" id="acceptTerms">
+                    <label for="acceptTerms">Accept</label>
+                </div>
+
+            <button id="closeTermsBtn">Close</button>
+            </div>
+        </div>
+
+    </body>
+</html>
